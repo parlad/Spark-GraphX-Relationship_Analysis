@@ -26,15 +26,19 @@ In Spark, you can get lot of details about the graphs such as list and number of
 
 This we how we start the GraphX PySpark
 
- 
+![](data_set/project_images/GraphXStartinterface.png)
+
  
 Data Set
 We have two tables named person and relationship. A person has id, name and age. A relationship table contains source, destination, relationship. Here source and destination are user ids to relationship column show the relationship between them.  
  
-   
+![](data_set/project_images/familyRelation.png)
+
+![](data_set/project_images/userInfo.png)    ![](data_set/project_images/relationshipInfo.png)
 
 
 Sample Code
+```
 1.	from graphframes import *  
 2.	  
 3.	  
@@ -65,35 +69,46 @@ Sample Code
 28.	   fromExpr = "name = 'Bob'",  
 29.	   toExpr = "name = 'William'",  
 30.	   ).show()  
+```
 
 Find All the edges connected to Andrew
-
+![](data_set/project_images/allEdgesConnectedByAndrew.png)
 
 
 
 All incoming connection to Andrew 
-
-
+![](data_set/project_images/all_incoming_connection_to_andrew.png)
 
 
 Number of links coming out from Andrew using the outDegrees
+ ![](data_set/project_images/Number_of_link_comming_out_from_andrew.png)
  
 Triangle Count Problem: This count column identifies how many triangle relationships the vertex is participating in.  
+ 
+ ![](data_set/project_images/TriangelRelationship.png)
  
 The output shows that Andrew and Sierra have the maximum triangle counts, since they are involved in three kinds of relationships
 Apply a PageRank Algorithm
  It was originally started by Google’s founders to identify the most important pages on the Internet. The PageRank algorithm measures the importance of each vertex in a graph. Assume a scenario where one Twitter user has 10 important followers, and each of those followers has multiple followers in turn. This is to say that the PageRank algorithm considers each important follower a legitimate endorsement of the Twitter user and thereby gives a higher ranking to the user.
+```
 >>> pageRank = graph.pageRank(resetProbability=0.20, maxIter=10)
+```
+
 Here, we are calling the PageRank algorithm using the pageRank methods. It takes two attributes
 1.	resetProbablity: This value is a random value reset probability (alpha).
 2.	maxIter : This is the number of times you want pageRank to run.
 
 You can see from the original persons schema that a new column has been added called pagerank and new column weight has been added to the original relationship schema. These both columns contributed to the PageRank score
+
+![](data_set/project_images/PageRankGeneralInfo.png)
  
 What is the PageRank Score?
  
+ ![](data_set/project_images/PageRankScore.png)
 
 Let's look at the weight: weight is the determining factor to calculate page rank
+
+![](weight)
  
 As you can see from the table William’s relationship with Andrew gets the maximum weight since it is unique. No one other than Andrew is a friend to William. 
 Apply the Breadth First Algorithm
@@ -105,6 +120,8 @@ HOW IT WORKS
 	fromExpr: Expression to identify the from vertex.
 	toExpr: Expression to identify the to vertex.
 graph.bfs(fromExpr=""Name='Bob'"",toExpr=""Name='William'"").show(). We are looking for shortest path between William and ‘Bob.
+
+![](data_set/project_images/ApplyingBrathFirstSearch.png)
  
 
 
