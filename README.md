@@ -14,7 +14,7 @@ GraphX Introduction
 
 GraphX is Apache Spark’s API for graphs and graph-parallel computation. GraphX unifies ETL (Extract, Transform & Load) process, exploratory analysis and iterative graph computation within a single system. The usage of graphs can be seen in Facebook’s friends, LinkedIn’s connections, internet’s routers, relationships between galaxies and stars in astrophysics and Google’s Maps.
 
-![](Spark-GraphX-Relationship_Analysis/data_set/project_images/socialMediaRelation.png)
+![](data_set/project_images/socialMediaRelation.png)
  
 
 In Spark, you can get lot of details about the graphs such as list and number of edges, nodes, neighbors per nodes, in degree and out degree score per each node.  The basic graph functions that can be used in PySpark are the following: 
