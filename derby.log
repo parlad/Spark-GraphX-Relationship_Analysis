@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon May 04 18:40:10 EDT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0171-e1d8-be60-0000041f12f8 
+on database directory /Users/praladneupane/Documents/ITEC_593/spark/python-spark-tutorial/GraphX/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@23b378e1 
+Loaded from file:/usr/local/Cellar/apache-spark/2.4.4/libexec/jars/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_231-b11
+user.dir=/Users/praladneupane/Documents/ITEC_593/spark/python-spark-tutorial/GraphX
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.15.4
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
