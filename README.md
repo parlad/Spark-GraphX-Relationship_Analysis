@@ -108,7 +108,7 @@ What is the PageRank Score?
 
 Let's look at the weight: weight is the determining factor to calculate page rank
 
-![](weight)
+![](data_set/project_images/pageRankWeight.png)
  
 As you can see from the table William’s relationship with Andrew gets the maximum weight since it is unique. No one other than Andrew is a friend to William. 
 Apply the Breadth First Algorithm
